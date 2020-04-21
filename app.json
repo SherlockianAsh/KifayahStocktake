@@ -1,0 +1,17 @@
+{
+  "name": "KifayahStocktake",
+  "displayName": "KifayahStocktake",
+  "expo": {
+    "name": "KifayahStocktake",
+    "slug": "KifayahStocktake",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
