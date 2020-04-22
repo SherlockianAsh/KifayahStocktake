@@ -1,14 +1,31 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput,ScrollView, Image } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <ScrollView>
+      <Text>Hello World</Text>
+      <View style={styles.container}>
+        <Text>My name is Asyrof</Text>
+        <Text>Testing 2 1 4</Text>
+        <Image source={{uri:'https://reactnative.dev/docs/assets/p_cat2.png',}}
+        style={{width: 200, height: 200}}/>
+      </View>
+      <TextInput
+      style={styleInput.container}
+      defaultValue="testy me"/>
+    </ScrollView>
+
   );
 }
 
+const styleInput = StyleSheet.create(
+  {container:{
+    height:40,
+    borderColor:'gray',
+    borderWidth:1
+  },
+});
 const styles = StyleSheet.create({
   container: {
     flex: 1,
