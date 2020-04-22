@@ -8,7 +8,7 @@ export default function App() {
       <View style={styles.container}>
         <Text>My name is Asyrof</Text>
         <Text>Testing 2 1 4</Text>
-        <Image source={{uri:'https://raw.githubusercontent.com/SherlockianAsh/KifayahStocktake/master/img/logo.png',}}
+        <Image source={{uri:'https://raw.githubusercontent.com/SherlockianAsh/KifayahStocktake/master/img/logo1.png',}}
         style={{width: 200, height: 200}}/>
       </View>
       <TextInput
