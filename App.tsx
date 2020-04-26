@@ -1,36 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput,ScrollView, Image } from 'react-native';
-
+import {Text, View, TextInput,ScrollView, Image,  StatusBar, } from 'react-native';
+import Inputs from './src/input';
+import UIStyle from './css/uistyle';
 export default function App() {
   return (
-    <ScrollView>
-      <Text>Hello World</Text>
-      <View style={styles.container}>
-        <Text>My name is Asyrof</Text>
-        <Text>Testing 2 1 4</Text>
-        <Image source={{uri:'https://raw.githubusercontent.com/SherlockianAsh/KifayahStocktake/master/img/logo1.png',}}
-        style={{width: 200, height: 200}}/>
+    <View style={UIStyle.container}>
+      <View>
+        <Text>Header</Text>
       </View>
-      <TextInput
-      style={styleInput.container}
-      defaultValue="testy me"/>
-    </ScrollView>
+      <ScrollView>
+      <StatusBar barStyle="dark-content" />
+        <View style={UIStyle.img_container}>
+          <Image source={{uri:'https://raw.githubusercontent.com/SherlockianAsh/KifayahStocktake/master/img/logo1.png',}}
+          style={UIStyle.img}/>
+        </View>
+        <View>
+            <Inputs />
+        </View>
+      </ScrollView>
+      <View>
+          <Text>Footer</Text>
+      </View>
+    </View>
 
   );
 }
-
-const styleInput = StyleSheet.create(
-  {container:{
-    height:40,
-    borderColor:'gray',
-    borderWidth:1
-  },
-});
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
